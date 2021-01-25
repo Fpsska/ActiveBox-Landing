@@ -1,0 +1,303 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    .reviews__text {
+        font-size: 1.6em;
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .works__item {
+        width: 50%;
+    }
+
+    /**/
+    .reviews__photo {
+        width: 100%;
+    }
+    .reviews__content {
+        width: 100%;
+        padding: 0.5em 0.5em 0.3em 0.5em;
+    }
+    .reviews__text {
+        font-size: 1.5em;
+        margin: 0 0 0.5em 0;
+    }
+    .slick-dots {
+        position: relative;
+        margin: 0.5em 0 0.5em 0;
+        width: auto;
+    }
+    .slick-dots button {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .nav__link {
+        margin-left: 1em;
+        font-size: 0.8em;
+    }
+    .header {
+        padding: 0 0 5em 0;
+    }
+    .header__inner {
+        margin: 5em auto 0 auto;
+    }
+    .header__title {
+        font-size: 1.6em;
+    }
+    .header__subtitle {
+        font-size: 1.1em;
+    }
+
+    /**/
+    .features {
+        margin: 5em 0;
+    }
+
+    /**/
+    .works__item {
+        width: 50%;
+    }
+
+    /**/
+    .team__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /**/
+    .reviews__photo {
+        width: 100%;
+    }
+    .reviews__content {
+        width: 100%;
+        padding: 0.5em 0.5em 0.3em 0.5em;
+    }
+    .reviews__text {
+        font-size: 1.5em;
+        margin: 0 0 0.5em 0;
+    }
+    .slick-dots {
+        position: relative;
+        margin: 0.5em 0 0.5em 0;
+        width: auto;
+    }
+    .slick-dots button {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .header__bar {
+        justify-content: center;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__title {
+        font-size: 1.4em;
+    }
+    .header__subtitle {
+        font-size: 1em;
+    }
+    .header__inner {
+        margin: 4em auto 0 auto;
+    }
+
+    /**/
+    .features__itmes {
+        width: 50%;
+    }
+
+    .features {
+        margin: 5em 0;
+    }
+
+    /**/
+    .works__item {
+        width: 50%;
+    }
+
+    /**/
+    .team__item {
+        width: 50%;
+        margin: 0 0 2em 0;
+    }
+    .team__photo {
+        margin: auto auto 1em auto;
+    }
+
+    /**/
+    .reviews__photo {
+        width: 100%;
+    }
+    .reviews__content {
+        width: 100%;
+        padding: 0.5em 0.5em 0.3em 0.5em;
+    }
+    .reviews__text {
+        font-size: 1.5em;
+        margin: 0 0 0.5em 0;
+    }
+    .slick-dots {
+        position: relative;
+        margin: 0.5em 0 0.5em 0;
+        width: auto;
+    }
+    .slick-dots button {
+        width: 15px;
+        height: 15px;
+    }
+
+    /**/
+    .footer__inner {
+        display: none;
+    }
+    .footer__inner-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1em 0;
+    }
+    .footer__block:nth-child(1) {
+        width: 100%;
+        margin: 0 0 2em 0;
+        padding: 0.5em 0.5em;
+    }
+    .footer__block:nth-child(2) {
+        width: 50%;
+        margin: 0;
+        padding: 0.5em 0.5em;
+    }
+    .footer__block:nth-child(3) {
+        width: 50%;
+        margin: 0;
+        padding: 0.5em 0.5em;
+    }
+}
+
+/* Phones */
+@media (min-width: 320px) and (max-width: 480px) {
+    .container {
+        padding: 0.3em 0.3em;
+    }
+    .header {
+        padding: 0 0 4em 0;
+    }
+    .header__logo {
+        margin: auto;
+    }
+    .header__bar {
+        height: 60px;
+    }
+    .nav {
+        display: none;
+    }
+    .header__title {
+        font-size: 1em;
+    }
+    .header__subtitle {
+        font-size: 0.8em;
+    }
+    .header__inner {
+        width: 100%;
+        margin: 3em auto 0 auto;
+    }
+    .header--btn {
+        padding: 0 1.5em;
+        font-size: 1em;
+        height: 50px;
+    }
+
+    /**/
+    .features {
+        margin: 5em 0;
+    }
+    .features__itmes {
+        width: 100%;
+    }
+
+    /**/
+    .works__item {
+        width: 100%;
+        border-bottom: 1.5px solid #fff;
+        border-right: none;
+    }
+
+    /**/
+    .team__item {
+        width: 100%;
+    }
+    .team__item:nth-child(4) {
+        margin: 0;
+    }
+    .team__photo {
+        margin: 0 auto 0.5em auto;
+    }
+
+    /**/
+    .download__title {
+        font-size: 1.1em;
+    }
+    .download__text {
+        font-size: 0.8em;
+    }
+
+    /**/
+    .footer__inner {
+        display: none;
+    }
+    .footer__inner-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1em 0;
+    }
+    .footer__block:nth-child(1) {
+        width: 100%;
+        margin: 0 0 2em 0;
+        padding: 0.5em 0.5em;
+    }
+    .footer__block:nth-child(2) {
+        width: 50%;
+        margin: 0;
+        padding: 0.5em 0.5em;
+    }
+    .footer__block:nth-child(3) {
+        width: 50%;
+        margin: 0;
+        padding: 0.5em 0.5em;
+    }
+
+    /**/
+    .download {
+        margin: 4em 0;
+    }
+
+    /**/
+    .reviews__photo {
+        width: 100%;
+    }
+    .reviews__content {
+        width: 100%;
+        padding: 0.5em 0.5em 0.3em 0.5em;
+    }
+    .reviews__text {
+        font-size: 1.5em;
+        margin: 0 0 0.5em 0;
+    }
+    .slick-dots {
+        position: relative;
+        margin: 0.5em 0 0.5em 0;
+        width: auto;
+    }
+    .slick-dots button {
+        width: 15px;
+        height: 15px;
+    }
+}
