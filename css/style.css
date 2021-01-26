@@ -29,7 +29,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
-    background: #31344e url("/img/Header/header-bg.jpg") center no-repeat;
+    background: #31344e url("../img/Header/header-bg.jpg") center no-repeat;
     background-size: cover;
     padding: 0 0 7em 0;
 }
@@ -519,13 +519,13 @@ body {
 }
 
 .reviews__photo.photo-1 {
-    background-image: url(/img/Reviews/reviews-3.jpg);
+    background-image: url(../img/Reviews/reviews-3.jpg);
 }
 .reviews__photo.photo-2 {
-    background-image: url(/img/Reviews/reviews-2.jpg);
+    background-image: url(../img/Reviews/reviews-2.jpg);
 }
 .reviews__photo.photo-3 {
-    background-image: url(/img/Reviews/reviews-1.jpg);
+    background-image: url(../img/Reviews/reviews-1.jpg);
 }
 
 .reviews__content {
