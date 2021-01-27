@@ -103,8 +103,12 @@ body {
 
 .nav__link:hover {
     opacity: 1;
-    color: #5b5e74;
     transition: 0.2s linear;
+}
+
+.nav__link:focus {
+    color:  #484f8f;
+    text-decoration: none;
 }
 
 #header__burger {

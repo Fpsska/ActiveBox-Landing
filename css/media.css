@@ -1,5 +1,10 @@
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
+    #menu-icon.active {
+        display: none;
+    }
+
+    /**/
     .reviews__text {
         font-size: 1.6em;
     }
@@ -7,6 +12,11 @@
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+    #menu-icon.active {
+        display: none;
+    }
+
+    /**/
     .works__item {
         width: 50%;
     }
@@ -52,6 +62,10 @@
     .header__subtitle {
         font-size: 1.1em;
     }
+    #menu-icon.active {
+        display: none;
+    }
+
 
     /**/
     .features {

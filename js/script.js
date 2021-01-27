@@ -1,4 +1,3 @@
-
 let header = $("#headerJS");
 let headerH = header.innerHeight();
 let scrollPos = $(window).scrollTop();
@@ -12,12 +11,12 @@ $(window).on("scroll load resize", function () {
 
     if (scrollPos > headerH) {
         headerBar.addClass("fixed");
-        burger.addClass('active');
-        burgerMenu.addClass('active');
+        burger.addClass("active");
+        burgerMenu.addClass("active");
     } else {
         headerBar.removeClass("fixed");
-        burger.removeClass('active');
-        burgerMenu.removeClass('active');
+        burger.removeClass("active");
+        burgerMenu.removeClass("active");
     }
 });
 
@@ -27,20 +26,22 @@ $("[data-scroll]").on("click", function (event) {
     event.preventDefault();
 
     let elementId = $(this).data("scroll");
-    let elementOffset = $(elementId).offset().top;
+        elementOffset = $(elementId).offset().top;
 
     nav.removeClass("show");
 
-    $("html, body").animate({
-        scrollTop: elementOffset - 56
-    }, 700);
-
+    $("html, body").animate(
+        {
+            scrollTop: elementOffset - 56,
+        },
+        700
+    );
 });
 
 // /*=========/.SMOOTH SCROLL========*/
 
 $(document).ready(function () {
-    $('.reviews__slider').slick({
+    $(".reviews__slider").slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -48,29 +49,35 @@ $(document).ready(function () {
         arrows: false,
         dots: true,
         adaptiveHeight: true,
-        swipeToSlide: true
+        swipeToSlide: true,
     });
 });
 
 // //*********/.SLIDER*********//
 
 $(document).ready(function () {
-
-    $('#menu-icon').click(function () {
-        if ($('#header__burger').css("left") == "-250px") {
-            $('#header__burger').animate({ left: '0px' }, 350);
-            $('#menu-icon').animate({ left: '250px' }, 350);
-            $('.menu-text').animate({ left: '300px' }, 350).empty().text("Close");
-        }
-        else {
-            $('#header__burger').animate({ left: '-250px' }, 350);
-            $(this).animate({ left: '0px' }, 350);
-            $('.menu-text').animate({ left: '50px' }, 350).empty().text("Menu");
-
+    $("#menu-icon").click(function () {
+        if ($("#header__burger").css("left") == "-250px") {
+            $("#header__burger").animate({ left: "0px" }, 350);
+            $("#menu-icon").animate({ left: "250px" }, 350);
+            $(".menu-text").animate({ left: "300px" }, 350).empty().text("Close");
+        } else {
+            $("#header__burger").animate({ left: "-250px" }, 350);
+            $(this).animate({ left: "0px" }, 350);
+            $(".menu-text").animate({ left: "50px" }, 350).empty().text("Menu");
         }
     });
-    $('#menu-icon').click(function () {
+    $("#menu-icon").click(function () {
         $(this).toggleClass("on");
+    });
+    $(".burger__tab").click(function () {
+        $(this).toggleClass("active");
+        if ($(".burger__tab").hasClass("active")) {
+            $("#header__burger").animate({ left: "-250px" }, 350);
+            $("#menu-icon").removeClass("on");
+            $("#menu-icon").animate({ left: "0px" }, 350);
+            $(".menu-text").animate({ left: "50px" }, 350).empty().text("Menu");
+        }
     });
 });
 
