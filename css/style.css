@@ -107,7 +107,7 @@ body {
 }
 
 .nav__link:focus {
-    color:  #484f8f;
+    color: #484f8f;
     text-decoration: none;
 }
 
@@ -309,7 +309,6 @@ body {
     transform: rotate(-45deg) translate(7px, -7px);
     background: #fff;
 }
-
 
 /*Features*
 =========================*/
@@ -535,7 +534,7 @@ body {
 .reviews__content {
     display: flex;
     width: 50%;
-    padding: .3em 0.3em .3em 4em;
+    padding: 0.3em 0.3em 0.3em 4em;
     flex-direction: column;
     justify-content: center;
 }
@@ -546,7 +545,7 @@ body {
     font-size: 2em;
     line-height: 1.2;
     color: #fff;
-    margin: 0 0 .5em 0;
+    margin: 0 0 0.5em 0;
 }
 
 .reviews__author {
