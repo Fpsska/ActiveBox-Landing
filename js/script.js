@@ -1,6 +1,7 @@
 let header = $("#headerJS");
 let headerH = header.innerHeight();
 let scrollPos = $(window).scrollTop();
+
 let nav = $("#navJS");
 let burger = $("#header__burger");
 let burgerMenu = $("#menu-icon");
@@ -26,15 +27,15 @@ $("[data-scroll]").on("click", function (event) {
     event.preventDefault();
 
     let elementId = $(this).data("scroll");
-        elementOffset = $(elementId).offset().top;
+    elementOffset = $(elementId).offset().top;
 
     nav.removeClass("show");
 
     $("html, body").animate(
         {
-            scrollTop: elementOffset - 56,
+            scrollTop: elementOffset,
         },
-        700
+        900
     );
 });
 
@@ -56,26 +57,26 @@ $(document).ready(function () {
 // //*********/.SLIDER*********//
 
 $(document).ready(function () {
-    $("#menu-icon").click(function () {
-        if ($("#header__burger").css("left") == "-250px") {
-            $("#header__burger").animate({ left: "0px" }, 350);
-            $("#menu-icon").animate({ left: "250px" }, 350);
+    burgerMenu.click(function () {
+        if (burger.css("left") == "-250px") {
+            burger.animate({ left: "0px" }, 350);
+            burgerMenu.animate({ left: "250px" }, 350);
             $(".menu-text").animate({ left: "300px" }, 350).empty().text("Close");
         } else {
-            $("#header__burger").animate({ left: "-250px" }, 350);
+            burger.animate({ left: "-250px" }, 350);
             $(this).animate({ left: "0px" }, 350);
             $(".menu-text").animate({ left: "50px" }, 350).empty().text("Menu");
         }
     });
-    $("#menu-icon").click(function () {
+    burgerMenu.click(function () {
         $(this).toggleClass("on");
     });
     $(".burger__tab").click(function () {
         $(this).toggleClass("active");
         if ($(".burger__tab").hasClass("active")) {
-            $("#header__burger").animate({ left: "-250px" }, 350);
-            $("#menu-icon").removeClass("on");
-            $("#menu-icon").animate({ left: "0px" }, 350);
+            burger.animate({ left: "-250px" }, 350);
+            burgerMenu.removeClass("on");
+            burgerMenu.animate({ left: "0px" }, 350);
             $(".menu-text").animate({ left: "50px" }, 350).empty().text("Menu");
         }
     });

@@ -3,7 +3,6 @@
     #menu-icon.active {
         display: none;
     }
-
     /**/
     .reviews__text {
         font-size: 1.6em;
@@ -12,16 +11,24 @@
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+    .header__bar {
+        padding: 2em 1em;
+    }
+    /**/
     #menu-icon.active {
         display: none;
     }
-
     /**/
     .works__item {
         width: 50%;
     }
-
+    .works__photo{
+        height: auto;
+    }
     /**/
+    .reviews {
+        height: auto;
+    }
     .reviews__photo {
         width: 100%;
     }
@@ -53,8 +60,8 @@
     .header {
         padding: 0 0 5em 0;
     }
-    .header__inner {
-        margin: 5em auto 0 auto;
+    .header__bar {
+        padding: 2em 1em;
     }
     .header__title {
         font-size: 1.6em;
@@ -65,26 +72,27 @@
     #menu-icon.active {
         display: none;
     }
-
-
     /**/
-    .features {
+    /* .features {
         margin: 5em 0;
-    }
-
+    } */
     /**/
     .works__item {
         width: 50%;
     }
-
+    .works__photo{
+        height: auto;
+    }
     /**/
     .team__item {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-
     /**/
+    .reviews {
+        height: auto;
+    }
     .reviews__photo {
         width: 100%;
     }
@@ -111,6 +119,10 @@
 @media (max-width: 767px) {
     .header__bar {
         justify-content: center;
+        padding: .5em 0;
+    }
+    .header__bar.fixed {
+        padding: .5em 0;
     }
     .header__nav {
         display: none;
@@ -121,25 +133,32 @@
     .header__subtitle {
         font-size: 1em;
     }
-    .header__inner {
-        margin: 4em auto 0 auto;
-    }
-
     /**/
-    .features__itmes {
+    .features {
+        height: auto;
+    }
+    .features__items {
         width: 50%;
     }
-
     .features {
         margin: 5em 0;
     }
-
     /**/
+    .works {
+        height: auto;
+    }
     .works__item {
         width: 50%;
+        height: 350px;
     }
-
+    .works__photo{
+        min-height: 350px;
+    }
     /**/
+    .team {
+        height: auto;
+        margin: 5em 0 3em 0;
+    }
     .team__item {
         width: 50%;
         margin: 0 0 2em 0;
@@ -147,8 +166,10 @@
     .team__photo {
         margin: auto auto 1em auto;
     }
-
     /**/
+    .reviews {
+        height: auto;
+    }
     .reviews__photo {
         width: 100%;
     }
@@ -169,7 +190,10 @@
         width: 15px;
         height: 15px;
     }
-
+    /**/
+    .download {
+        margin: 5em 0;
+    }
     /**/
     .footer__inner {
         display: none;
@@ -204,11 +228,11 @@
     .header {
         padding: 0 0 4em 0;
     }
-    .header__logo {
-        margin: auto;
-    }
     .header__bar {
-        height: 60px;
+        padding: .5em 0;
+    }
+    .header__bar.fixed {
+        padding: .5em 0;
     }
     .nav {
         display: none;
@@ -221,29 +245,25 @@
     }
     .header__inner {
         width: 100%;
-        margin: 3em auto 0 auto;
     }
     .header--btn {
         padding: 0 1.5em;
         font-size: 1em;
         height: 50px;
     }
-
     /**/
     .features {
         margin: 5em 0;
     }
-    .features__itmes {
+    .features__items {
         width: 100%;
     }
-
     /**/
     .works__item {
         width: 100%;
         border-bottom: 1.5px solid #fff;
         border-right: none;
     }
-
     /**/
     .team__item {
         width: 100%;
@@ -254,7 +274,6 @@
     .team__photo {
         margin: 0 auto 0.5em auto;
     }
-
     /**/
     .download__title {
         font-size: 1.1em;
@@ -262,7 +281,6 @@
     .download__text {
         font-size: 0.8em;
     }
-
     /**/
     .footer__inner {
         display: none;
@@ -287,12 +305,10 @@
         margin: 0;
         padding: 0.5em 0.5em;
     }
-
     /**/
     .download {
         margin: 4em 0;
     }
-
     /**/
     .reviews__photo {
         width: 100%;
