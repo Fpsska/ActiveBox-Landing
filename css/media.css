@@ -73,10 +73,6 @@
         display: none;
     }
     /**/
-    /* .features {
-        margin: 5em 0;
-    } */
-    /**/
     .works__item {
         width: 50%;
     }
@@ -220,13 +216,66 @@
     }
 }
 
+@media (min-width: 812px) and (max-width: 823px) and (min-height: 375px) and (max-height: 411px){
+    .header {
+        height: auto;
+        padding: 0;
+    }
+    .header__bar {
+        padding: 1em;
+    }
+    .header__inner {
+        padding: 3.7em 0;
+    }
+    .header__title {
+        font-size: 1.2em;
+    }
+    .header__subtitle {
+        font-size: .8em;
+        margin-bottom: 2em;
+    }
+    .features {
+        height: auto;
+        margin: 3em 0;
+    } 
+    .works {
+        height: auto;
+    }
+    .works__item {
+        width: 50%;
+        height: 350px;
+    }
+    .works__photo{
+        min-height: 350px;
+    }
+    .team {
+        height: auto;
+        margin: 3em 0;
+    }
+    .reviews {
+        height: auto;
+    } 
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 766px) {
+    .header__title {
+        font-size: 1em;
+    }
+    .header__subtitle {
+        font-size: .75em;
+        margin-bottom: 2.2em;
+    }
+    .header__inner {
+        padding-top: .5em;
+    }
+}
+
+
 /* Phones */
 @media (min-width: 320px) and (max-width: 480px) {
     .container {
         padding: 0.3em 0.3em;
-    }
-    .header {
-        padding: 0 0 4em 0;
     }
     .header__bar {
         padding: .5em 0;
