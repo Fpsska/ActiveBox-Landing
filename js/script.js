@@ -18,6 +18,8 @@ $(window).on("scroll load resize", function () {
         headerBar.removeClass("fixed");
         burger.removeClass("active");
         burgerMenu.removeClass("active");
+    } if ( window.innerWidth >= 768 ) {
+        burgerMenu.removeClass("active");
     }
 });
 
@@ -62,10 +64,12 @@ $(document).ready(function () {
             burger.animate({ left: "0px" }, 350);
             burgerMenu.animate({ left: "250px" }, 350);
             $(".menu-text").animate({ left: "300px" }, 350).empty().text("Close");
+            $(".header__logo").css({ opacity: "0" });
         } else {
             burger.animate({ left: "-250px" }, 350);
             $(this).animate({ left: "0px" }, 350);
             $(".menu-text").animate({ left: "50px" }, 350).empty().text("Menu");
+            $(".header__logo").css({ opacity: "1" });
         }
     });
     burgerMenu.click(function () {
@@ -78,6 +82,7 @@ $(document).ready(function () {
             burgerMenu.removeClass("on");
             burgerMenu.animate({ left: "0px" }, 350);
             $(".menu-text").animate({ left: "50px" }, 350).empty().text("Menu");
+            $(".header__logo").css({ opacity: "1" });
         }
     });
 });
