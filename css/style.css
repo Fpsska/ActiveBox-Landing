@@ -469,10 +469,25 @@ body {
 }
 
 .team__photo {
-    display: block;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 260px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-bottom: 1.2em;
+}
+
+.team__photo_1 {
+    background-image: url(../img/Team/Team1.jpg);
+}
+.team__photo_2 {
+    background-image: url(../img/Team/Team2.jpg);
+}
+.team__photo_3 {
+    background-image: url(../img/Team/Team3.jpg);
+}
+.team__photo_4 {
+    background-image: url(../img/Team/Team4.jpg);
 }
 
 .team__name {
