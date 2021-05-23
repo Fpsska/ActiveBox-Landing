@@ -69,7 +69,7 @@ body {
     align-items: center;
     transition: .3s linear;
     background-color: #31344e;
-    padding: 1em 0;
+    padding: .25em;
     border: none;
     top: 0;
     left: 0;
@@ -78,6 +78,8 @@ body {
 }
 
 .header__wrapper {
+    position: relative;
+
     width: 100%;
     height: 100%;
     display: flex;
@@ -471,6 +473,7 @@ body {
 .team__photo {
     width: 100%;
     height: 260px;
+    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -8,7 +8,7 @@ let burgerMenu = $("#menu-icon");
 let headerBar = $("#barJS");
 
 $(window).on("scroll load resize", function () {
-    scrollPos = $(this).scrollTop();
+    scrollPos = $(this).scrollTop(); // обновление позиции скрола при прокрутке страницы
 
     if (scrollPos > headerH) {
         headerBar.addClass("fixed");
@@ -20,18 +20,17 @@ $(window).on("scroll load resize", function () {
         burgerMenu.removeClass("active");
     } if ( window.innerWidth >= 768 ) {
         burgerMenu.removeClass("active");
-    }
+    }  
+
 });
 
 // /*=========/.FIXED HEADER========*/
 
-$("[data-scroll]").on("click", function (event) {
+$("[data-scroll]").on("click scroll", function (event) {
     event.preventDefault();
 
-    let elementId = $(this).data("scroll");
-    elementOffset = $(elementId).offset().top;
-
-    nav.removeClass("show");
+    let elementId = $(this).data("scroll"); // получене id блока, который связан по data-scoll
+    let elementOffset = $(elementId).offset().top;  // позиция каждого элемента от верха страницы
 
     $("html, body").animate(
         {
@@ -39,6 +38,15 @@ $("[data-scroll]").on("click", function (event) {
         },
         900
     );
+
+    $(window).on("scroll", function () { // удаление класса fixed у header при прокрутке к блоку
+        scrollPos = $(this).scrollTop();
+
+        if (elementOffset == scrollPos) {
+            headerBar.removeClass("fixed");
+        } 
+    });
+
 });
 
 // /*=========/.SMOOTH SCROLL========*/

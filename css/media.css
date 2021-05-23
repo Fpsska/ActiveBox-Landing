@@ -31,6 +31,10 @@
     .team__photo {
         margin: 0 auto 0.5em auto;
     }
+
+    .reviews__text {
+        font-size: 1.5em;
+    }
 }
 
 @media (max-width: 1024px) and (min-height: 1366px) {
@@ -88,7 +92,7 @@
         padding: 0.5em 0.5em 0.3em 0.5em;
     }
     .reviews__text {
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin: 0 0 0.5em 0;
     }
     .slick-dots {
@@ -185,6 +189,7 @@
     .header__subtitle {
         font-size: .8em;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -267,6 +272,10 @@
         width: 50%;
         margin: 0;
         padding: 0.5em 0.5em;
+    }
+
+    .reviews__text {
+        font-size: 1em;
     }
 }
 
